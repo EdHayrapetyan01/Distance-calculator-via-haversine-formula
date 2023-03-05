@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 
 import TripPlannerForm from './trip-planner-form';
 import TripSummary from './trip-summary';
@@ -7,12 +7,12 @@ import TripSummary from './trip-summary';
 function App() {
   return (
     <div className='container'>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<TripPlannerForm />} />
           <Route path='/trip-summary' element={<TripSummary />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
