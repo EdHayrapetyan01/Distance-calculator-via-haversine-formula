@@ -1,0 +1,70 @@
+@font-face {
+  font-family: Inter;
+  src: url("./assets/inter-font/Inter-Regular.ttf") format("woff");
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-family: 'Inter', sans-serif;
+  height: 100%;
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+}
+
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: conic-gradient(from 167.77deg at 26.05% 40.64%,
+      rgba(207, 238, 187, 0.881587) -18.97deg, #ABE1C9 8.74deg,
+      #80CDD7 160.76deg, #7C9CE5 225.35deg,
+      rgba(126, 163, 230, 0.22) 298.84deg,
+      rgba(207, 238, 187, 0.881587) 341.03deg,
+      #ABE1C9 368.74deg);
+  filter: blur(150px);
+  z-index: -1;
+}
+
+.MuiAutocomplete-option {
+  min-height: auto;
+  font-size: 14px !important;
+  font-family: 'Inter';
+}
+
+.MuiAutocomplete-option:hover {
+
+  background-color: #7C9CE5 !important;
+}
+
+.MuiAutocomplete-option.Mui-focused {
+
+  background-color: #7C9CE5 !important;
+}
+
+.MuiAutocomplete-input {
+  font-size: 14px !important;
+  font-family: 'Inter' !important;
+}
+
+.MuiOutlinedInput-input {
+  font-size: 14px !important;
+  font-family: 'Inter' !important;
+
+}
